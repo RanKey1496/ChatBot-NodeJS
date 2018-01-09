@@ -48,7 +48,7 @@ function sendMessage(recipientId, message) {
         qs: {access_token: process.env.PAGE_ACCESS_TOKEN},
         method: "POST",
         json: {
-            recipientId: {id: recipientId},
+            recipient: {id: recipientId},
             message: message
         }
     }, (error, response, body) => {
