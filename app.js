@@ -53,8 +53,8 @@ function sendMessage(recipientId, message) {
         }
     }, (error, response, body) => {
         console.log("Error sending message :" + error);
-        console.log("Error sending message :" + response);
-        console.log("Error sending message :" + body);
+        console.log("Error sending message :" + JSON.stringify(response));
+        console.log("Error sending message :" + JSON.stringify(body));
     })
 }
 
