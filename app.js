@@ -49,7 +49,7 @@ function sendMessage(recipientId, message) {
         method: "POST",
         json: {
             recipientId: {id: recipientId},
-            message: message,
+            message: message
         }
     }, (error, response, body) => {
         console.log("Error sending message :" + error);
