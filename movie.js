@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var Star = new Schema({
+var MovieSchema = new Schema({
   user_id: {type: String},
   title: {type: String},
   plot: {type: String},
